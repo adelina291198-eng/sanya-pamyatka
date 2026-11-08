@@ -9,7 +9,10 @@
   function show(hash) {
     var h = (hash || '').replace(/^#/, '').split('/');
     var tab = h[0], anchor = h[1];
-    if (!document.getElementById('p-' + tab)) tab = 'home';
+    if (!document.getElementById('p-' + tab)) { // ссылка на карточку: #yanoda
+      var el = tab && document.getElementById(tab), pane = el && el.closest('.pane');
+      if (pane) { anchor = tab; tab = pane.id.slice(2); } else tab = 'home';
+    }
     if (current) scrollPos[current] = window.scrollY;
     tabs.forEach(function (a) { a.classList.toggle('on', a.dataset.tab === tab); });
     [].forEach.call(document.querySelectorAll('.pane'), function (p) { p.hidden = p.id !== 'p-' + tab; });
