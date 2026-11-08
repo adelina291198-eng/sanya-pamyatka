@@ -1,0 +1,29 @@
+/* --- app --- */
+html{scroll-behavior:auto}
+body{padding-bottom:calc(72px + env(safe-area-inset-bottom))}
+header.top{padding:14px 16px 12px}
+header.top h1{font-size:20px}
+header.top p{font-size:14px;margin-top:2px}
+.wrap{padding-bottom:24px}
+.pane>h2:first-of-type{margin-top:18px}
+nav.tabs{position:fixed;left:0;right:0;bottom:0;z-index:30;display:flex;background:#fff;border-top:1px solid var(--line);box-shadow:0 -2px 10px rgba(0,0,0,.08);padding-bottom:env(safe-area-inset-bottom)}
+nav.tabs a{flex:1;display:flex;flex-direction:column;align-items:center;gap:1px;padding:7px 2px 8px;color:var(--muted);text-decoration:none;font-size:12px;font-weight:700;min-width:0}
+nav.tabs a b{font-size:22px;line-height:1.1;font-weight:400}
+nav.tabs a.on{color:var(--accent);background:var(--accent-soft)}
+.today{background:#fff;border:3px solid var(--accent);border-radius:16px;padding:14px 16px;margin:16px 0 12px}
+.today .lbl{font-size:14px;font-weight:800;color:var(--accent);text-transform:uppercase;letter-spacing:.04em}
+.today .txt{font-size:19px;margin-top:4px}
+.today ul{margin:4px 0 0}
+.quick{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin:0 0 12px}
+.qb{appearance:none;border:0;border-radius:14px;padding:12px 4px;background:var(--blue-soft);color:var(--blue);font:inherit;font-size:28px;line-height:1.1;display:flex;flex-direction:column;align-items:center;gap:4px;text-decoration:none;cursor:pointer}
+.qb span{font-size:14px;font-weight:800}
+.qb.red{background:var(--accent);color:#fff}
+.small2{font-size:15px}
+li.now{background:var(--warn-soft);border-radius:8px;padding:4px 6px;margin-left:-6px;outline:2px solid #f2c94c}
+.been{appearance:none;border:2px solid var(--line);background:#fff;color:var(--muted);border-radius:20px;padding:6px 12px;font:inherit;font-size:15px;font-weight:700;cursor:pointer;margin-top:10px}
+.been.on{background:var(--ok-soft);border-color:var(--ok);color:var(--ok)}
+.card.was{opacity:.8}
+.card.was h3::after{content:" ✓";color:var(--ok)}
+.big-show{padding-bottom:calc(24px + env(safe-area-inset-bottom))}
+.big-show .zh{font-size:clamp(30px,9vw,48px)}
+#sos{scroll-margin-top:12px}
