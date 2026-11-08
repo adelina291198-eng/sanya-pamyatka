@@ -42,7 +42,7 @@
 - Репозиторий: https://github.com/adelina291198-eng/sanya-pamyatka
 
 ## Как обновлять
-Текст правится в `D:\ИИшка\Санья-родители	emplate.html`, потом сборка `scripts/build_app.py` (копия в папке tools/; аргументы: папка с img/ и tiles/, папка памятки, папка приложения) перезаписывает index.html, style.css, img/, tiles/, sw.js (FILES). app.js, manifest.json, иконки — правятся тут руками.
+Текст правится в `D:\ИИшка\Санья-родители\template.html`, потом сборка `tools/build_app.py` (аргументы: папка с img/ и tiles/, папка памятки, папка приложения) перезаписывает index.html, style.css, img/, tiles/, sw.js (FILES). app.js, manifest.json, иконки — правятся тут руками.
 
 ## История изменений
 - 2026-11-08 — первая версия: 5 вкладок, «Сегодня» по дате, «Были», работа без интернета (sw v1)
