@@ -103,7 +103,7 @@ for k, (pos, sid) in enumerate(idx):
     end = idx[k + 1][0] if k + 1 < len(idx) else len(body)
     sec[sid] = body[pos:end]
 intro = body[:idx[0][0]]
-TABS = [('home', '🏠', 'Главная', ['plan', 'trips', 'home', 'flight']),
+TABS = [('home', '🏠', 'Главная', ['plan', 'home', 'trips', 'flight']),
         ('places', '📚', 'Справочник', ['places', 'walk']),
         ('food', '🍲', 'Еда', ['map', 'food', 'shop']),
         ('phrases', '🗣', 'Фразы', ['phrases']),

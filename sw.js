@@ -1,4 +1,4 @@
-const VERSION = 'v5';
+const VERSION = 'v6';
 const CACHE = 'sanya-' + VERSION;
 const FILES = [
  "./",
@@ -27,6 +27,15 @@ const FILES = [
  "img/cdf_2.jpg",
  "img/cdf_3.jpg",
  "img/cdf_4.jpg",
+ "img/cf_bxc.jpg",
+ "img/cf_bxc_1.jpg",
+ "img/cf_cj.jpg",
+ "img/cf_cxy.jpg",
+ "img/cf_hnyz.jpg",
+ "img/cf_hzh.jpg",
+ "img/cf_hzh_1.jpg",
+ "img/cf_ysl.jpg",
+ "img/cf_yxj.jpg",
  "img/dadonghai.jpg",
  "img/dadonghai_1.jpg",
  "img/dadonghai_2.jpg",
@@ -73,6 +82,16 @@ const FILES = [
  "img/sanyabay_1.jpg",
  "img/sanyabay_2.jpg",
  "img/sanyabay_3.jpg",
+ "img/sh_ananas.jpg",
+ "img/sh_hailv.jpg",
+ "img/sh_joycity.jpg",
+ "img/sh_mangrove.jpg",
+ "img/sh_mangrove_1.jpg",
+ "img/sh_outlet.jpg",
+ "img/sh_summer.jpg",
+ "img/sh_yummy.jpg",
+ "img/sh_zima.jpg",
+ "img/sh_zima_1.jpg",
  "img/shell_1.jpg",
  "img/shell_2.jpg",
  "img/tianya.jpg",
