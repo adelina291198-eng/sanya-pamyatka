@@ -103,11 +103,11 @@ for k, (pos, sid) in enumerate(idx):
     end = idx[k + 1][0] if k + 1 < len(idx) else len(body)
     sec[sid] = body[pos:end]
 intro = body[:idx[0][0]]
-TABS = [('home', '🏠', 'Главная', ['plan', 'home', 'flight']),
-        ('places', '📍', 'Места', ['places', 'walk']),
+TABS = [('home', '🏠', 'Главная', ['plan', 'trips', 'home', 'flight']),
+        ('places', '📚', 'Справочник', ['places', 'walk']),
         ('food', '🍲', 'Еда', ['map', 'food', 'shop']),
         ('phrases', '🗣', 'Фразы', ['phrases']),
-        ('info', 'ℹ️', 'Инфо', ['pay', 'didi', 'more'])]
+        ('info', 'ℹ️', 'Инфо', ['pay', 'didi', 'more'] + (['costs'] if 'costs' in sec else []))]
 used = sum((t[3] for t in TABS), [])
 assert sorted(used) == sorted(sec), (used, list(sec))
 
