@@ -104,8 +104,9 @@ for k, (pos, sid) in enumerate(idx):
     sec[sid] = body[pos:end]
 intro = body[:idx[0][0]]
 TABS = [('home', '🏠', 'Главная', ['plan', 'home', 'trips', 'flight']),
-        ('places', '📚', 'Справочник', ['places', 'walk']),
-        ('food', '🍲', 'Еда', ['map', 'food', 'shop']),
+        ('places', '📚', 'Места', ['places', 'walk']),
+        ('food', '🍲', 'Еда', ['food', 'map']),
+        ('shop', '🛍', 'Шопинг', ['shop']),
         ('phrases', '🗣', 'Фразы', ['phrases']),
         ('info', 'ℹ️', 'Инфо', ['pay', 'didi', 'more'] + (['costs'] if 'costs' in sec else []))]
 used = sum((t[3] for t in TABS), [])

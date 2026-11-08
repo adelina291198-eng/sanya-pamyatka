@@ -82,7 +82,7 @@
   var been = {};
   try { been = JSON.parse(localStorage.getItem(KEY) || '{}') || {}; } catch (e) { been = {}; }
   function save() { try { localStorage.setItem(KEY, JSON.stringify(been)); } catch (e) {} }
-  [].forEach.call(document.querySelectorAll('#p-home .card.place, #p-places .card, #p-food .card'), function (card) {
+  [].forEach.call(document.querySelectorAll('#p-home .card.place, #p-places .card, #p-food .card, #p-shop .card'), function (card) {
     var h = card.querySelector('h3'); if (!h) return;
     var id = h.textContent.trim();
     var btn = document.createElement('button'); btn.type = 'button'; btn.className = 'been';

@@ -7,7 +7,8 @@ header.top p{font-size:14px;margin-top:2px}
 .wrap{padding-bottom:24px}
 .pane>h2:first-of-type{margin-top:18px}
 nav.tabs{position:fixed;left:0;right:0;bottom:0;z-index:30;display:flex;background:#fff;border-top:1px solid var(--line);box-shadow:0 -2px 10px rgba(0,0,0,.08);padding-bottom:env(safe-area-inset-bottom)}
-nav.tabs a{flex:1;display:flex;flex-direction:column;align-items:center;gap:1px;padding:7px 2px 8px;color:var(--muted);text-decoration:none;font-size:12px;font-weight:700;min-width:0}
+nav.tabs a{flex:1;display:flex;flex-direction:column;align-items:center;gap:1px;padding:7px 2px 8px;color:var(--muted);text-decoration:none;font-size:11px;font-weight:700;min-width:0;letter-spacing:-.02em}
+nav.tabs a span{max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 nav.tabs a b{font-size:22px;line-height:1.1;font-weight:400}
 nav.tabs a.on{color:var(--accent);background:var(--accent-soft)}
 .today{background:#fff;border:3px solid var(--accent);border-radius:16px;padding:14px 16px;margin:16px 0 12px}
